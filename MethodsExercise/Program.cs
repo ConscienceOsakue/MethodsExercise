@@ -18,11 +18,13 @@ namespace MethodsExercise
             Console.WriteLine($"{userName} is an awesome name! Tell the class your favorite color.");
             var color = Console.ReadLine();
 
-            Console.WriteLine($"Nice, {color} is a beautiful color. The class would love to know the name of your favorite Animal?");
+            Console.WriteLine($"Nice {userName}, {color} is a beautiful color. The class would love to know the name of your favorite Animal?");
             var animal = Console.ReadLine();
 
-            Console.WriteLine($"{animal} is a unique choice. Lastly let the class your favorite band's name?");
+            Console.WriteLine($"{animal} is a unique choice. Lastly tell the class your favorite band's name?");
             var band = Console.ReadLine();
+
+            Console.WriteLine($"Students let's welcome {userName} to the class, as he just shared that {color}, {animal}, {band}, as his favorite color, animal and band.");
         }
     }
 }
