@@ -2,16 +2,29 @@
 
 namespace MethodsExercise
 {
-    public class Program
+    class Program
     {
+        public static int Sum(int num1, int num2)
+        {
+            var answer = num1 + num2;
+            return answer;
+        }
+        public static int Multiply(int num1, int num2, int num3) 
+        {
+            return num1 *num2 * num3;
+        }
+            
         static void Main(string[] args)
         {
-            //-------------- Exercise 1 ---------------
+            var amountOfCars = Sum(2, 6);
+            var blar = Multiply(60, 2, 4);
+
+            //-------------- Exercise 1 ------------------------
             //Nmae: Micheal 
             //Favorite Color: Blue
             //Favorite Animal: Walrus
             //Favorite Band:  The Beatles
- 
+
             Console.WriteLine("Hello new student, what is your first name?");
             var userName = Console.ReadLine();
 
@@ -25,6 +38,8 @@ namespace MethodsExercise
             var band = Console.ReadLine();
 
             Console.WriteLine($"Students let's welcome {userName} to the class, as he just shared that {color}, {animal}, {band}, as his favorite color, animal and band.");
+
+            //--------------- Exercise 2 ------------------------------
         }
     }
 }
